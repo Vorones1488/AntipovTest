@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse, RedirectResponse
-from function import checking_server_response, requst_server
+from src.function.function import checking_server_response, requst_server
 from src.cadastr import shema as vm
 from src.cadastr.model import CadastralNumbers
 from typing import List
@@ -8,7 +8,7 @@ from datetime import datetime
 import logging
 from logging.handlers import RotatingFileHandler
 from sqladmin import Admin
-from admin import CadastrAdmin
+from src.admin.admin import CadastrAdmin
 from src.database import get_asinc_sesiion, engin
 
 logger = logging.getLogger(__name__)
