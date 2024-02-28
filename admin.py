@@ -1,5 +1,5 @@
 from sqladmin import ModelView
-from ModelDB import CadastralNumbers
+from src.cadastr.model import CadastralNumbers
 
 class CadastrAdmin(ModelView, model=CadastralNumbers):
     can_delete = False

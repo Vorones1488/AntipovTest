@@ -4,3 +4,5 @@ test_main.http
 mydatabase.db
 app.log
 __pycache__/
+./src/migrations/version
+.env
